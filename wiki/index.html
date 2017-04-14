@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Wikipedia Article</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="/wiki/wiki-random.js"></script>
+  <link href="/common/styles.css" rel="stylesheet" type="text/css"/>
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body class="wiki">
+<div class="wrapper">
+  <aside>
+    <h1>Wikipedia Random Article</h1>
+    <p>A little client-side app to load a random Wikipedia article. Leverages jQuery to consume a
+      <a href="https://www.mediawiki.org/wiki/REST_API" target="_blank">RESTful Wikimedia API</a> and display random
+      articles.</p>
+  </aside>
+  <main class="clearfix">
+    <div class="controls">
+      <div class="options-switch" wiki-active-opt="stats">
+        <span wiki-opt="title" class="opt active">Title</span><span wiki-opt="summ" class="opt">Summary</span><span wiki-opt="full" class="opt">Full</span>
+      </div>
+      <div class="roll">
+        <button>Roll</button>
+        <span class="indicator">reticulating splines...</span>
+      </div>
+    </div>
+    <div class="wiki-articles">
+      <article class="wiki-article clearfix">
+
+        <p>Click "Roll" to begin!</p>
+      </article>
+    </div>
+    <aside id="viewed-articles">
+      <h4 class="init">Previously viewed articles</h4>
+      <ul class="aside-nav">
+
+      </ul>
+    </aside>
+  </main>
+</div>
+</body>
+</html>
