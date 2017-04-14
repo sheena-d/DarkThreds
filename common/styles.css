@@ -1,31 +1,44 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Oswald:200,300,500";
 
-.wrapper {
-  max-width: 720px;
-  width: 100%;
-  margin: 0 auto;
-}
 header,
 main,
 footer {
   width: auto;
+  padding: 30px 0;
+}
+
+.wrapper {
+  max-width: 680px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper > * {
   padding: 30px;
 }
+
+.home .wrapper {
+  max-width: 680px;
+}
+
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #514c58;
 }
+
 h1,
 .home h2 {
-  font-family:"Oswald";
+  font-family: "Oswald";
   font-size: 3em;
   margin: 1em 0 0 0;
   text-transform: uppercase;
   font-weight: 500;
+  line-height: 1.2em;
   border-bottom: #514c58 double 6px;
 }
+
 h2,
 .home h1 {
   font-family: "Oswald";
@@ -35,16 +48,61 @@ h2,
   text-transform: none;
   border: none;
 }
+
+h3:first-child,
+h4:first-child {
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 2em;
+  border-bottom: 1px solid #514c58;
+  line-height: 1.8em;
+  vertical-align: top;
+}
+
+h4 {
+  font-weight: 200;
+}
+
+.indicator {
+  display: none;
+}
+
+.indicator.processing {
+  display: inline;
+  margin-left: 20px;
+}
+
 p {
   margin-bottom: 1.2em;
 }
+
 p:last-child {
   margin-bottom: 0;
 }
+
+a {
+  color: #653d9c;
+  text-decoration: none;
+  border-bottom: 1px dashed #653d9c;
+}
+
+a:hover {
+  color: #7d35e3;
+  border-color: #7d35e3;
+}
+
+a:visited,
+a:visited:hover {
+  border-bottom: 0px;
+}
+
 ul.social {
   margin: 0;
   padding: 0;
 }
+
 ul.social li {
   display: inline-block;
   margin: 0 10px 0 0;
@@ -53,6 +111,7 @@ ul.social li {
   width: 22px;
   overflow: hidden;
 }
+
 ul.social li a {
   text-indent: -9999px;
   display: block;
@@ -61,21 +120,57 @@ ul.social li a {
   background: url(/img/icons.png) no-repeat 0 0;
   background-size: cover;
 }
+
 ul.social li.github a {
   margin-left: -44px;
 }
+
 ul.social li.linkedin a {
   margin-left: -66px;
 }
+
 ul.social li.stack a {
   margin-left: -22px;
 }
+
 ul.social li.codeschool a {
   margin-left: 0px;
 }
+
 ul.social li.drupal a {
   margin-left: -88px;
 }
+
 ul.social li a:hover {
   margin-top: -22px;
 }
+
+@media screen and (min-width: 920px) {
+  .wrapper {
+    max-width: 1080px;
+  }
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */

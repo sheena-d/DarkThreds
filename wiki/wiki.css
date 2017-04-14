@@ -1,0 +1,79 @@
+@import "../common/styles.css";
+/**
+ * Wikipedia API page
+ */
+
+.controls {
+  margin-bottom: 30px;
+}
+
+.options-switch,
+.opt,
+.roll {
+  display: inline-block;
+}
+
+.options-switch .opt,
+.roll button {
+  font-family: "Oswald";
+  font-weight: 300;
+  border: 1px solid #514c58;
+  border-left: 0px;
+  line-height: 2em;
+  padding: 0 1em;
+  margin: 0;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+.options-switch .opt {
+  background-color: #dbd6e2;
+}
+
+.options-switch .opt:first-child {
+  border-radius: 4px 0 0 4px;
+  border-left: 1px solid #514c58;
+}
+
+.roll button {
+  border-radius: 0 4px 4px 0;
+  margin-left: -4px;
+}
+
+.roll button:hover {
+  background-color: #514c58;
+  color: #ffffff;
+}
+
+.options-switch .opt:hover {
+  background-color: #bfb1d3;
+}
+
+.options-switch .opt.active {
+  background-color: #653d9c;
+  color: #ffffff;
+}
+
+.wiki-articles,
+#viewed-articles {
+  margin: 30px 0;
+}
+
+.wiki-img {
+  display: block;
+  float: left;
+  max-width: 33%;
+  margin: 0 20px 10px 0;
+}
+
+@media screen and (min-width: 920px) {
+  .wiki-articles {
+    width: 65%;
+    float: left;
+  }
+
+  #viewed-articles {
+    width: 30%;
+    float: right;
+  }
+}
