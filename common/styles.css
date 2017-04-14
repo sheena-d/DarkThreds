@@ -1,0 +1,81 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Oswald:200,300,500";
+
+.wrapper {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+header,
+main,
+footer {
+  width: auto;
+  padding: 30px;
+}
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #514c58;
+}
+h1,
+.home h2 {
+  font-family:"Oswald";
+  font-size: 3em;
+  margin: 1em 0 0 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-bottom: #514c58 double 6px;
+}
+h2,
+.home h1 {
+  font-family: "Oswald";
+  font-weight: 200;
+  font-size: 1.5em;
+  margin: 0;
+  text-transform: none;
+  border: none;
+}
+p {
+  margin-bottom: 1.2em;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+ul.social {
+  margin: 0;
+  padding: 0;
+}
+ul.social li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 0;
+  height: 22px;
+  width: 22px;
+  overflow: hidden;
+}
+ul.social li a {
+  text-indent: -9999px;
+  display: block;
+  height: 44px;
+  width: 110px;
+  background: url(/img/icons.png) no-repeat 0 0;
+  background-size: cover;
+}
+ul.social li.github a {
+  margin-left: -44px;
+}
+ul.social li.linkedin a {
+  margin-left: -66px;
+}
+ul.social li.stack a {
+  margin-left: -22px;
+}
+ul.social li.codeschool a {
+  margin-left: 0px;
+}
+ul.social li.drupal a {
+  margin-left: -88px;
+}
+ul.social li a:hover {
+  margin-top: -22px;
+}
