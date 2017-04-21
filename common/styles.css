@@ -32,7 +32,7 @@ h1,
 .home h2 {
   font-family: "Oswald";
   font-size: 3em;
-  margin: 1em 0 0 0;
+  margin: 60px 0 0 0;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 1.2em;
@@ -63,6 +63,12 @@ h3 {
 
 h4 {
   font-weight: 200;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: .8em;
+  margin: 3.6em 0 0;
 }
 
 .indicator {
@@ -96,6 +102,30 @@ a:hover {
 a:visited,
 a:visited:hover {
   border-bottom: 0px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul.work,
+ul.exercises{
+
+}
+
+ul.work li,
+ul.exercises li{
+
+}
+
+ul.work li a,
+ul.exercises li a{
+  font-weight: bold;
+}
+
+ul.work .skills,
+ul.exercises .skills{
+  font-size: .8em;
 }
 
 ul.social {
@@ -149,6 +179,10 @@ ul.social li a:hover {
   .wrapper {
     max-width: 1080px;
   }
+}
+
+.wrapper footer {
+  padding: 40px 30px 90px;
 }
 
 .clearfix:after {
